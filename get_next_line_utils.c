@@ -6,11 +6,21 @@
 /*   By: abouchfa <abouchfa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 13:29:06 by abouchfa          #+#    #+#             */
-/*   Updated: 2021/11/17 13:29:08 by abouchfa         ###   ########.fr       */
+/*   Updated: 2021/11/21 15:12:00 by abouchfa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+
+size_t	ft_strlen(const char *s)
+{
+	size_t	i;
+
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
+}
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -48,16 +58,6 @@ int	gnl_strchr(const char *s)
 		}
 	}
 	return (0);
-}
-
-size_t	ft_strlen(const char *s)
-{
-	size_t	i;
-
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
 }
 
 void	ft_strncpy(char *dest, char *src, int size)

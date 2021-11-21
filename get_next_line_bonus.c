@@ -6,11 +6,11 @@
 /*   By: abouchfa <abouchfa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 19:25:08 by abouchfa          #+#    #+#             */
-/*   Updated: 2021/11/17 13:53:58 by abouchfa         ###   ########.fr       */
+/*   Updated: 2021/11/21 15:14:54 by abouchfa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 void	ft_free(void *p)
 {
@@ -82,7 +82,7 @@ char	*read_line(int fd, char *buffer)
 
 char	*get_next_line(int fd)
 {
-	static char		stock[1024][BUFFER_SIZE + 1];
+	static char		stock[OPEN_MAX][BUFFER_SIZE + 1];
 	char			*buffer;
 	char			*line;
 
