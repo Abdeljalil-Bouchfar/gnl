@@ -1,5 +1,6 @@
 # gnl
 Reading a line from an fd is way too tedious!!
+This project is about programming a function that lets you read the text file pointed to by the file descriptor, one line at a time.
 
 ## [Input-output system calls in C](https://www.geeksforgeeks.org/input-output-system-calls-c-create-open-close-read-write/)
 
